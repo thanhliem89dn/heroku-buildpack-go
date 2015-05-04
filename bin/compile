@@ -103,7 +103,7 @@ GOPATH=$build/.heroku/g export GOPATH
 PATH=$GOROOT/bin:$PATH
 
 
-if ! (test -d $build/Godeps || (which hg >/dev/null && which bzr >/dev/null))
+if ! (test -d $build/Godeps || (which hg >/dev/null && which bzr >/dev/null && which honcho >/dev/null))
 then
     echo
     echo "       Tired of waiting for bzr and hg?"
