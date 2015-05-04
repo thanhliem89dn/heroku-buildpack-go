@@ -122,11 +122,12 @@ then
     echo -n "       Installing Bazaar..."
     pip install bzr > /dev/null 2>&1
     echo " done"
-
-    echo -n "       Installing Honcho..."
-    pip install honcho > /dev/null 2>&1
-    echo " done"
 fi
+
+echo -n "       Installing Honcho..."
+pip install honcho > /dev/null 2>&1
+echo " done"
+
 
 p=$GOPATH/src/$name
 mkdir -p $p
@@ -155,6 +156,7 @@ then
 else
     echo "-----> Running: go get -tags heroku ./..."
     go get -tags heroku ./...
+    go get github.com/mattn/goreman
 fi
 
 rm -rf $build/.heroku
