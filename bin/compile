@@ -124,10 +124,6 @@ then
     echo " done"
 fi
 
-echo -n "       Installing Honcho..."
-pip install honcho > /dev/null 2>&1
-echo " done"
-
 
 p=$GOPATH/src/$name
 mkdir -p $p
