@@ -147,7 +147,7 @@ unset GIT_DIR # unset git dir or it will mess with goinstall
 cd $p
 
 echo "-----> installing goreman"
-go get github.com/mattn/goreman
+go get github.com/thanhliem89dn/goreman
 
 if test -e $build/Godeps
 then
