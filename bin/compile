@@ -122,6 +122,10 @@ then
     echo -n "       Installing Bazaar..."
     pip install bzr > /dev/null 2>&1
     echo " done"
+
+    echo -n "       Installing Honcho..."
+    pip install honcho > /dev/null 2>&1
+    echo " done"
 fi
 
 p=$GOPATH/src/$name
